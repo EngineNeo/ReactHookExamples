@@ -7,11 +7,15 @@ const App = () => {
     setCount(prevCount => prevCount - 1)
   }
 
+  function inCount() {
+    setCount(prevCount => prevCount + 1)
+  }
+
   return (
     <>
       <button onClick={deCount}>-</button>
       <span>{count}</span>
-      <button>+</button>
+      <button onClick={inCount}>+</button>
     </>
   )
 }
